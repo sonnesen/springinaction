@@ -10,7 +10,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration
+@ContextConfiguration(locations = { "classpath:META-INF/spring/knights.xml" })
 public class KnightXMLInjectionTest {
 
 	@Autowired
@@ -27,7 +27,7 @@ public class KnightXMLInjectionTest {
 	@Test
 	public void shouldInjectKnightWithSlayDragonQuest() {
 		knight.embarkOnQuest();
-		assertEquals("Fa la la, the knight is to brave!\n" + "Embarking on quest to slay the dragon!\n"
+		assertEquals("Fa la la, the knight is so brave!\n" + "Embarking on quest to slay the dragon!\n"
 				+ "Tee hee hee, the brave knight did embark on a quest!\n", printStream.getPrintedString());
 	}
 }

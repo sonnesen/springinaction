@@ -28,6 +28,6 @@ public class KnightJavaConfigInjectionTest {
 	@Test
 	public void shouldInjectKnightWithSlayDragonQuest() {
 		knight.embarkOnQuest();
-		assertEquals("Embark on quest to slay the dragon!\n", printStream.getPrintedString());
+		assertEquals("Embarking on quest to slay the dragon!\n", printStream.getPrintedString());
 	}
 }
