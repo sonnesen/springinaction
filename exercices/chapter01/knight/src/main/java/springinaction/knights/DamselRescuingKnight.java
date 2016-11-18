@@ -1,4 +1,4 @@
-package com.springinaction.knights;
+package springinaction.knights;
 
 public class DamselRescuingKnight implements Knight {
 

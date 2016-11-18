@@ -1,4 +1,4 @@
-package com.springinaction.knights;
+package springinaction.knights;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

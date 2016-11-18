@@ -1,4 +1,4 @@
-package com.springinaction.knights;
+package springinaction.knights;
 
 import static org.junit.Assert.assertEquals;
 
@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.support.AnnotationConfigContextLoader;
+
+import springinaction.knights.Knight;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = KnightConfig.class, loader = AnnotationConfigContextLoader.class)

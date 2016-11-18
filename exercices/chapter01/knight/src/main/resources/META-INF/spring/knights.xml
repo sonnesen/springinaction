@@ -4,15 +4,15 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
 
-	<bean id="knight" class="com.springinaction.knights.BraveKnight">
+	<bean id="knight" class="springinaction.knights.BraveKnight">
 		<constructor-arg ref="quest"></constructor-arg>
 	</bean>
 
-	<bean id="quest" class="com.springinaction.knights.SlayDragonQuest">
+	<bean id="quest" class="springinaction.knights.SlayDragonQuest">
 		<constructor-arg value="#{T(System).out}"></constructor-arg>
 	</bean>
 
-	<bean id="minstrel" class="com.springinaction.knights.Minstrel">
+	<bean id="minstrel" class="springinaction.knights.Minstrel">
 		<constructor-arg value="#{T(System).out}"></constructor-arg>
 	</bean>
 

@@ -1,8 +1,11 @@
-package com.springinaction.knights;
+package springinaction.knights;
 
 import static org.mockito.Mockito.*;
 
-import org.junit.Test;public class BraveKnightTest {
+import org.junit.Test;
+
+import springinaction.knights.BraveKnight;
+import springinaction.knights.Quest;public class BraveKnightTest {
 
 	@Test
 	public void knightShouldEmbarkOnQuest() {

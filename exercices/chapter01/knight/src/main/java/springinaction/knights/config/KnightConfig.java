@@ -1,12 +1,12 @@
-package com.springinaction.knights.config;
+package springinaction.knights.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.springinaction.knights.BraveKnight;
-import com.springinaction.knights.Knight;
-import com.springinaction.knights.Quest;
-import com.springinaction.knights.SlayDragonQuest;
+import springinaction.knights.BraveKnight;
+import springinaction.knights.Knight;
+import springinaction.knights.Quest;
+import springinaction.knights.SlayDragonQuest;
 
 @Configuration
 public class KnightConfig {
