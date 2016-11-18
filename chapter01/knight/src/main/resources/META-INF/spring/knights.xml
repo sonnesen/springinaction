@@ -18,10 +18,11 @@
 
 	<aop:config>
 		<aop:aspect ref="minstrel">
-			<aop:pointcut expression="execution(* *.embarkOnQuest(..))"
-				id="embark" />
-			<aop:before method="singBeforeQuest" pointcut-ref="embark" />
-			<aop:after method="singAfterQuest" pointcut-ref="embark" />
+			<aop:pointcut id="embark" expression="execution(* *.embarkOnQuest(..))" />
+
+			<aop:before pointcut-ref="embark" method="singBeforeQuest" />
+
+			<aop:after pointcut-ref="embark" method="singAfterQuest" />
 		</aop:aspect>
 	</aop:config>
 
