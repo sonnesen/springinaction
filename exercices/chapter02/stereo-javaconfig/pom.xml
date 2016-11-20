@@ -6,7 +6,7 @@
 		<artifactId>chapter02</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>stereo-autoconfig</artifactId>
+	<artifactId>stereo-javaconfig</artifactId>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>

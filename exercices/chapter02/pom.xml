@@ -7,4 +7,10 @@
 	</parent>
 	<artifactId>chapter02</artifactId>
 	<packaging>pom</packaging>		
+    <modules>
+        <module>stereo-autoconfig</module>
+        <module>stereo-javaconfig</module>
+        <module>stereo-xmlconfig</module>
+        <module>stereo-mixedconfig</module>
+    </modules>
 </project>
