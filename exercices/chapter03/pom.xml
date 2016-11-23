@@ -10,5 +10,6 @@
   <modules>
   	<module>profiles</module>
   	<module>conditional</module>
+  	<module>scopedbeans</module>
   </modules>
 </project>
