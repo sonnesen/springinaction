@@ -8,7 +8,7 @@ import org.aspectj.lang.annotation.Pointcut;
 @Aspect
 public class AnotherAudience {
 	
-	@Pointcut("execution(** concert.Performance.perform(..))")
+	@Pointcut("execution(* concert.Performance.perform(..))")
 	public void performance() {
 		
 	}

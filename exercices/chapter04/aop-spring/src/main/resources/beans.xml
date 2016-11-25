@@ -8,7 +8,20 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
 	<context:component-scan base-package="concert"></context:component-scan>
+	
 	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+	
 	<bean class="concert.Audience"></bean>
+	<bean class="concert.CoolAudience"></bean>	
+	
+	<aop:config>
+		<aop:aspect ref="coolAudience">		
+			<aop:pointcut expression="execution(* concert.Performance.perform(..))" id="performance"/>	
+			<aop:before method="silenceCellPhones" pointcut=""/>
+			<aop:before method="takeSeats" pointcut-ref="performance"/>
+			<aop:after-returning method="applause" pointcut-ref="performance"/>
+			<aop:after-throwing method="demandRefund" pointcut-ref="performance"/>
+		</aop:aspect>
+	</aop:config>
 	
 </beans>
