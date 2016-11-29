@@ -10,9 +10,9 @@
 <link rel="stylesheet" type="text/css" href="<c:url value="/resources/style.css" />" >
 </head>
 <body>
-	<h1>Welcome to Spitter</h1>
-	
-	<a href="<c:url value="/spittles" />">Spittles</a> |
-	<a href="<c:url value="/spitter/register" />">Register</a>
+	<h1>Your Profile</h1>
+	<c:out value="${spitter.username}"></c:out><br>
+	<c:out value="${spitter.firstName}"></c:out><c:out value="${spitter.lastName}"></c:out><br>
+	<c:out value="${spitter.email}"></c:out>
 </body>
 </html>
